@@ -1,0 +1,44 @@
+<resources>
+    <declare-styleable name="LoginBaseLayout">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleDimension" format="dimension" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="LoginBaseLayout1">
+<!--        <attr name="exampleString" format="string" />-->
+<!--        <attr name="exampleDimension" format="dimension" />-->
+<!--        <attr name="exampleColor" format="color" />-->
+<!--        <attr name="exampleDrawable" format="color|reference" />-->
+    </declare-styleable>
+    <declare-styleable name="HeaderBar">
+        <attr name="title_text_clolor" format="color"/>
+        <attr name="title_text" format="string"/>
+        <attr name="background_color" format="color"/>
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="show_views">
+            <flag name="right_text" value="0x01" />
+            <flag name="right_img" value="0x02" />
+            <flag name="left_text" value="0x04" />
+            <flag name="left_img" value="0x08" />
+            <flag name="center_text" value="0x10" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CustomEditText">
+        <attr name="customEditTextShowClear" format="boolean" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:text" />
+        <attr name="android:hint" />
+        <attr name="android:textColorHint" />
+    </declare-styleable>
+
+
+</resources>
