@@ -206,7 +206,11 @@ public class HeadTitleBar extends RelativeLayout implements DefaultTheme {
     }
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void setLeftImageBackMode(int type){
-        RippleUtil.getRipperDrawable(leftImage,type);
+        Drawable drawable = leftImage.getDrawable();
+        if(drawable instanceof VectorDrawable){
+            RippleUtil.getRipperDrawable(leftImage,type);
+        }
+
     }
     public void setLeftImage(@DrawableRes int resId){
         leftImage.setImageResource(resId);
@@ -323,7 +327,11 @@ public class HeadTitleBar extends RelativeLayout implements DefaultTheme {
     }
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void setRightImageBackGroundMode(int type){
-        RippleUtil.getRipperDrawable(rightImage,type);
+        Drawable drawable = rightImage.getDrawable();
+        if(drawable instanceof VectorDrawable){
+            RippleUtil.getRipperDrawable(rightImage,type);
+        }
+
     }
 
       @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
